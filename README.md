@@ -52,6 +52,19 @@ For those who face issues with Google Colab notebook disconnecting after a few m
 
 For those who want to run this locally, follow the setup guide below.
 
+## Docker Setup
+
+Run the following command to build the dockerimage
+```
+docker build -t aicovergen .
+```
+
+To run the docker container, run the following command
+**Attached**  
+`docker run --gpus all -p 127.0.0.1:7860:7860 aicovergen`  
+**Detached**  
+`docker run -d --gpus all -p 127.0.0.1:7860:7860 aicovergen`
+
 ## Setup
 
 ### Install Git and Python
