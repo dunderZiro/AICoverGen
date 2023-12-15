@@ -56,14 +56,19 @@ For those who want to run this locally, follow the setup guide below.
 
 Run the following command to build the dockerimage
 ```
-docker build -t aicovergen .
+make build
 ```
 
 To run the docker container, run the following command
-**Attached**  
-`docker run --gpus all -p 127.0.0.1:7860:7860 aicovergen`  
-**Detached**  
-`docker run -d --gpus all -p 127.0.0.1:7860:7860 aicovergen`
+```
+make run # Attached
+make rund # Dettached
+```
+
+To bring down the container
+```
+make clean
+```
 
 ## Setup
 
